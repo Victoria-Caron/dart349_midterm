@@ -12,12 +12,16 @@
     <main>
         <section>
             <header>
-                <nav class="containerhd">
-                    <a href="index.html">victoria</a>
-                    <a href="styleguide.html" class="current">styleguide</a>
-                    <a href="inspiration.html">inspiration</a>
-                    <a href="getintouch.html">get in touch</a>
+                <nav id="mynav" class="overlay">
+                    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</span>
+                        <div class="overlay-content">
+                            <a href="index.html" class="current">VDesign</a>
+                            <a href="styleguide.html">styleguide</a>
+                            <a href="inspiration.html">inspiration</a>
+                            <a href="getintouch.html">get in touch</a>
+                        </div>
                 </nav>
+                <span id="trigger" onclick="openNav()">☰</span>
             </header>
         </section>
 
@@ -30,7 +34,7 @@
         <section>
             <article>
                 <div>
-                    <h2 class="h2sg h2-boxshadowsg">Color palette</h2>
+                    <h2 class="h2sg">Color palette</h2>
                     <div class="box-cp">
                         <img src="images/Light pink.svg" alt="">
                         <img src="images/Grey.svg" alt="">
@@ -42,7 +46,7 @@
                 <div class="flex-boxsg">
 
                     <div class="childtitle-typo stickme">
-                        <h2 class="h2sg h2sg-2 h2-boxshadow">Typography</h2>
+                        <h2 class="h2sg h2sg-2">Typography</h2>
                     </div>
 
                     <div class="child-h1234p">
@@ -75,7 +79,7 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="h2sg h2sg-2 h2-boxshadowsg">Inspiration</h2>
+                    <h2 class="h2sg h2sg-2">Inspiration</h2>
                     <article class="box">
                         <div class="itemsg-1 imgdior"></div>
                         <div class="itemsg-2 imgdg"></div>
@@ -86,7 +90,7 @@
                     </article>
                 </div>
                 <div>
-                    <h2 class="h2sg h2sg-2 h2-boxshadowsg">Icons</h2>
+                    <h2 class="h2sg h2sg-2">Icons</h2>
                     <div class="box">
                         <div class="imgsg-1 imgarrow1"></div>
                         <div class="imgsg-2 imgfigma"></div>
@@ -100,12 +104,37 @@
                 </div>
             </article>
         </section>
+
+        <section class="form-container">
+            <h2>Let's work together!</h2>
+            <form class="form-container" action="Submit">
+                <div class="formbox labelbox">
+                    <label for="firstname">First name</label><br>
+                    <input type="text" name="name" placeholder="John"><br>
+                </div>
+                <div class="formbox labelbox">
+                    <label for="lastname">Last name</label><br>
+                    <input type="text" name="lastname" placeholder="Doe"><br>
+                </div>
+                <div class="formbox labelbox">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" placeholder="john.doetest.com"><br>
+                </div>
+                <div class="formbox labelbox">
+                    <label for="message">Write me a message!</label><br>
+                    <textarea name="message" placeholder="Message"></textarea><br>
+                </div>
+                <button>Submit</button>            
+            </form>
+        </section>
+
     </main>
 
     <footer>
         <h4>Website developped by VDesign @2023</h4>
     </footer>
 
+    <script src="Javascript/scripts.js"></script>
 </body>
 
 </html>
